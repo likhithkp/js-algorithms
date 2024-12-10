@@ -1,0 +1,18 @@
+const nums = [
+    12, 47, 89, 34, 65, 23, 78, 90, 56, 32,
+    71, 15, 44, 88, 39, 62, 11, 27, 53, 99,
+    25, 36, 74, 81, 40, 92, 18, 67, 54, 33,
+    77, 95, 12, 48, 84, 29, 60, 41, 73, 85,
+    19, 21, 63, 38, 50, 93, 31, 66, 75, 82
+];
+
+function linearSearch(array, num) {
+    for (let i = 0; i < array.length; i++) {
+        if (nums[i] === num) {
+            return i
+        }
+    }
+    return -1
+}
+
+console.log(linearSearch(nums, 40));
